@@ -54,11 +54,11 @@ a:hover {
     animation: intro_desc 2s;
 }
 
-.spec, .skills, .desc {
+.spec, .skills, .desc, .projects {
     display: flex;
 }
 
-.desc, .skills {
+.desc, .skills, .projects {
     justify-content: center;
 }
 
@@ -77,7 +77,7 @@ a:hover {
     margin-top: 15px;
 }
 
-.spec h4, .skills h4 {
+.spec h4 {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -109,15 +109,12 @@ a:hover {
 }
 
 .skills h2 {
-    margin-left: 150px;
     width: 100%;
     color: white;
     text-shadow: 1px 1px 4px rgba(0,0,0,.3);
 }
 
 .skills ul {
-    width: 40%;
-    height: 240px;
     margin-left: 15px;
 }
 
@@ -125,16 +122,61 @@ a:hover {
     margin-left: 30px;
 }
 
+.projects {
+    height: 550px;
+    background: #f6f8fa;
+    padding: 100px 200px 0 200px;
+    flex-wrap: wrap;
+}
+
+.projects h2 {
+    width: 100%;
+    margin-left: 150px;
+}
+
+.projects .card {
+    width: 60%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+}
+
 .card {
+    width: 40%;
+    height: 240px;
     background: white;
     border-radius: 8px;
     box-shadow: 3px 3px 10px rgba(0,0,0,.3);
     transition: box-shadow .3s, transform .3s;
+    padding: 30px;
 }
 
 .card:hover {
     box-shadow: 5px 5px 20px rgba(0,0,0,.3);
     transform: translateY(-5px);
+}
+
+.card h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card>h4 {
+    margin: 0 0 20px 0;
+}
+
+.card img {
+    height: 90%;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.3));
+}
+
+.card div {
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.card div h4 {
+    margin: 0 0 10px 0;
 }
 
 @keyframes intro_border {
