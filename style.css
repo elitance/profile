@@ -15,7 +15,7 @@ body {
     padding: 0 !important;
     overflow-x: hidden;
     margin: 0 !important;
-    text-shadow: 1px 1px 4px rgba(0,0,0,.3);
+    text-shadow: 0 0 2px rgba(0,0,0,.3);
 }
 
 body, .intro {
@@ -112,6 +112,7 @@ a:hover {
     margin-left: 150px;
     width: 100%;
     color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.3);
 }
 
 .skills ul {
