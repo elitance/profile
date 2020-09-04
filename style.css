@@ -27,6 +27,15 @@ body>div {
     border-bottom: 1.5px solid #2f3640;
 }
 
+a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .intro {
     padding: 35vh 0 0 5vw;
     height: 100vh;
@@ -82,13 +91,13 @@ body>div {
 }
 
 .desc h2 {
-    margin-right: 15px;
+    margin-right: 30px;
 }
 
 .desc article {
     width: 40%;
     border-left: 1.5px solid gray;
-    padding: 15px;
+    padding: 30px;
 }
 
 .skills {
