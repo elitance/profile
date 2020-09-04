@@ -36,6 +36,48 @@ a:hover {
     text-decoration: underline;
 }
 
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 97vw;
+    height: 70px;
+    padding: 15px;
+    top: 15px;
+    left: 15px;
+    background: #f6f8fa;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    filter: opacity(.85);
+    z-index: 9;
+    transform: translateY(-100px);
+    transition: transform .3s;
+}
+
+nav h1 {
+    padding-right: 10px;
+    border-right: 1.5px solid #2f3640;
+}
+
+nav span {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+nav a {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+nav img {
+    height: 40px;
+    transition: filter .2s;
+}
+
+nav img:hover {
+    filter: opacity(.8);
+}
+
 .intro {
     padding: 35vh 0 0 5vw;
     height: 100vh;
