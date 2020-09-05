@@ -17,7 +17,7 @@
 }
 
 html[lang=ko] .desc {
-    height: 600px;
+    height: 650px;
 }
 
 body {
@@ -30,10 +30,6 @@ body {
 body, .intro {
     background: #f5f6fa;
     color: #2f3640;
-}
-
-body > div {
-    border-bottom: 1.5px solid #2f3640;
 }
 
 a {
@@ -93,6 +89,7 @@ nav select:focus, .intro select:focus {
 }
 
 nav select {
+    background: none;
     justify-self: flex-end;
     margin-left: auto;
 }
@@ -182,7 +179,7 @@ nav img:hover {
 
 .skills {
     flex-wrap: wrap;
-    background: #ffdd57;
+    background: #b2bec3;
     height: 700px;
     padding-top: 50px;
     padding: 50px 200px 0 200px;
@@ -204,7 +201,7 @@ nav img:hover {
 
 .projects {
     height: 550px;
-    background: #f6f8fa;
+    background: #ced6e0;
     padding: 100px 200px 0 200px;
     flex-wrap: wrap;
 }
@@ -223,6 +220,8 @@ nav img:hover {
 
 .env {
     height: 500px;
+    background: #485460;
+    color: white;
     padding: 70px 200px 0 200px;
 }
 
