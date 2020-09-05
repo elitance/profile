@@ -37,16 +37,12 @@ body > div {
 }
 
 a {
-    color: inherit;
+    color: #0366d6;
     text-decoration: none;
-    transition: color .2s, background .2s;
 }
 
 a:hover {
     text-decoration: underline;
-    text-shadow: none;
-    color: #0366d6;
-    background: rgba(3,102,214,.1);
 }
 
 nav {
@@ -81,27 +77,28 @@ nav span a, .intro a {
     color: #0366d6;
 }
 
-nav select {
-    justify-self: flex-end;
-    margin-left: auto;
+nav select, .intro select {
+    width: 130px;
+    height: 28px;
     border: 1.5px solid white;
-    background: none;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.3);
     padding: 5px;
-    width: 8%;
-    height: 80%;
     transition: border .15s, box-shadow .15s;
 }
 
-nav select:focus {
+nav select:focus, .intro select:focus {
     border: 1.5px solid #0366d6;
     box-shadow: 2px 2px 5px rgba(3,102,214,.3);
 }
 
+nav select {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
 nav > a {
     margin-left: 15px;
-    background: none !important;
 }
 
 nav img {
@@ -129,6 +126,12 @@ nav img:hover {
 
 .intro h2 {
     animation: intro_desc 2s;
+}
+
+.intro select {
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .spec, .skills, .desc, .projects {
@@ -249,7 +252,6 @@ nav img:hover {
 
 .env a:hover {
     text-decoration: none;
-    text-shadow: inherit;
 }
 
 .env a img {

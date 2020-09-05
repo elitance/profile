@@ -1,5 +1,5 @@
 function changeLang(event) {
-    const select = document.querySelector('select');
+    const select = event.target;
     const selLang = select.options[select.selectedIndex].value;
     localStorage.setItem('lang',selLang);
     location.replace(selLang);
@@ -7,17 +7,17 @@ function changeLang(event) {
 
 function loadLang() {
     const lang = localStorage.getItem('lang');
-    if (!lang || lang === 'en-gb') {
-        localStorage.setItem('lang','en-gb');
-        location.replace('en-gb');
+    if (!lang || lang === 'en') {
+        localStorage.setItem('lang','en');
+        location.replace('en');
     } else {
-        location.replace('ko-kr');
+        location.replace('kr');
     }
 }
 
 function init() {
-    if (!(location.href.includes('ko-kr') || location.href.includes('en-gb'))) loadLang();
-    document.querySelector('select').addEventListener('input',changeLang);
+    if (!(location.href.includes('kr') || location.href.includes('en'))) loadLang();
+    document.querySelectorAll('select').forEach(select => select.addEventListener('input',changeLang));
 }
 
 init();
