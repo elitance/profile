@@ -15,7 +15,7 @@ function loadLang() {
 }
 
 function init() {
-    if (!(location.href.includes('ko-kr') || location.href.includes('en-gb'))) loadLang();
+    loadLang();
     document.querySelector('select').addEventListener('input',changeLang);
 }
 
