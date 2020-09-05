@@ -45,7 +45,7 @@ nav {
     display: flex;
     align-items: center;
     width: 97vw;
-    height: 70px;
+    height: 65px;
     padding: 15px;
     top: 15px;
     left: 15px;
@@ -68,13 +68,23 @@ nav span {
     font-weight: 500;
 }
 
-nav a {
+nav select {
     justify-self: flex-end;
     margin-left: auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    padding: 5px;
+    width: 8%;
+    height: 80%;
+}
+
+nav > a {
+    margin-left: 15px;
 }
 
 nav img {
-    height: 40px;
+    height: 35px;
     transition: filter .2s;
 }
 
