@@ -6,11 +6,13 @@ function changeLang(event) {
 
 function loadLang() {
     const lang = localStorage.getItem('lang');
-    if (!lang || lang === 'en-gb') {
-        localStorage.setItem('lang','en-gb');
-        location.replace('en-gb');
-    } else {
-        location.replace('ko-kr');
+    if (lang !== location.href.slice(location.href.lastIndexOf('/') + 1)) {
+        if (!lang || lang === 'en-gb') {
+            localStorage.setItem('lang','en-gb');
+            location.replace('en-gb');
+        } else {
+            location.replace('ko-kr');
+        }
     }
 }
 
