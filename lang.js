@@ -11,12 +11,12 @@ function loadLang() {
         localStorage.setItem('lang','en');
         location.replace('en');
     } else {
-        location.replace('kr');
+        location.replace('ko');
     }
 }
 
 function init() {
-    if (!(location.href.includes('kr') || location.href.includes('en'))) loadLang();
+    if (!(location.href.includes('ko') || location.href.includes('en'))) loadLang();
     document.querySelectorAll('select').forEach(select => select.addEventListener('input',changeLang));
 }
 
