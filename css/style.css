@@ -420,15 +420,47 @@ nav select {
         border-left: none;
         padding: 10px;
     }
+    
+    .projects h2 {
+        width: 90%;
+        height: 30px;
+        margin: 0 0 50px 0;
+    }
+    
+    .projects .card {
+        flex-direction: column;
+        height: 350px;
+        margin: 0 0 50px 0;
+    }
+    
+    .card img {
+        height: 90px;
+    }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .spec {
         font-size: 15px;
     }
 
     .spec h4 {
         font-size: 20px;
+    }
+
+    .skills, .projects {
+        padding: 50px 5px 0 5px;
+    }
+
+    .skills h2 {
+        width: 90%;
+    }
+
+    .env {
+        padding: 30px 15px 0 15px;
+    }
+
+    .contact {
+        padding: 50px 15px 0 15px;
     }
 }
 
@@ -447,7 +479,7 @@ nav select {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     nav {
         display: none;
     }
@@ -475,12 +507,7 @@ nav select {
     }
 
     .skills {
-        padding: 50px 5px 0 5px;
         height: 1050px;
-    }
-
-    .skills h2 {
-        width: 90%;
     }
 
     .skills ul {
@@ -492,20 +519,10 @@ nav select {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 470px;
-        padding: 50px 5px 0 5px;
-    }
-
-    .projects h2 {
-        width: 90%;
-        height: 30px;
-        margin: 0 0 50px 0;
+        height: 550px;
     }
 
     .projects .card {
-        flex-direction: column;
-        width: 90%;
-        height: 300px;
         font-size: 12.5px;
     }
 
@@ -516,7 +533,6 @@ nav select {
 
     .env {
         flex-direction: column;
-        padding: 30px 15px 0 15px;
     }
 
     .env div {
@@ -554,9 +570,5 @@ nav select {
 
     .card h4 {
         font-size: 20px;
-    }
-
-    .card img {
-        height: 90px;
     }
 }
