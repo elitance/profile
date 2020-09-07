@@ -424,6 +424,10 @@ nav select {
         display: initial;
     }
 
+    .intro h1 span {
+        display: none;
+    }
+
     .intro h2 {
         font-size: 20px;
     }
