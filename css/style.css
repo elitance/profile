@@ -414,7 +414,6 @@ nav select {
     }
     
     .desc article {
-        font-size: 14px;
         width: 95%;
         border-top: 1.5px solid gray;
         border-left: none;
@@ -439,6 +438,10 @@ nav select {
 }
 
 @media (max-width: 950px) {
+    .desc article {
+        font-size: 14px;
+    }
+
     .spec {
         font-size: 15px;
     }
