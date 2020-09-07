@@ -405,6 +405,48 @@ nav select {
     to {}
 }
 
+@media (max-width: 1500px) {
+    .desc {
+        padding: 0;
+        height: 80vh;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    
+    .desc article {
+        font-size: 14px;
+        width: 95%;
+        border-top: 1.5px solid gray;
+        border-left: none;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .spec {
+        font-size: 15px;
+    }
+
+    .spec h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .spec {
+        align-items: center;
+        flex-direction: column;
+        height: 250px;
+        padding-bottom: 50px;
+    }
+    
+    .spec div:nth-child(1) {
+        width: 80%;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 15px;
+    }
+}
+
 @media (max-width: 425px) {
     nav {
         display: none;
@@ -430,39 +472,6 @@ nav select {
 
     .intro h2 {
         font-size: 20px;
-    }
-
-    .spec {
-        align-items: center;
-        flex-direction: column;
-        height: 250px;
-        padding-bottom: 50px;
-        font-size: 15px;
-    }
-
-    .spec div:nth-child(1) {
-        width: 80%;
-        border-bottom: 1.5px solid white;
-        padding-bottom: 15px;
-    }
-
-    .spec h4 {
-        font-size: 20px;
-    }
-
-    .desc {
-        padding: 0;
-        height: 700px;
-        overflow: hidden;
-        flex-direction: column;
-    }
-
-    .desc article {
-        font-size: 14px;
-        width: 95%;
-        border-top: 1.5px solid gray;
-        border-left: none;
-        padding: 10px;
     }
 
     .skills {
