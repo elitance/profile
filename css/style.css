@@ -108,6 +108,10 @@ nav select {
     animation: intro_border 1s;
 }
 
+.intro h1 br {
+    display: none;
+}
+
 .intro h2 {
     animation: intro_desc 2s;
 }
@@ -399,4 +403,147 @@ nav select {
 @keyframes intro_desc {
     from { filter: opacity(0); }
     to {}
+}
+
+@media (max-width: 425px) {
+    nav {
+        display: none;
+    }
+
+    .intro {
+        padding: 25vh 15px 15px 5vw;
+        font-size: 14px;
+    }
+
+    .intro h1 {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .intro h1 br {
+        display: initial;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .spec {
+        align-items: center;
+        flex-direction: column;
+        height: 250px;
+        padding-bottom: 50px;
+        font-size: 15px;
+    }
+
+    .spec div:nth-child(1) {
+        width: 80%;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 15px;
+    }
+
+    .spec h4 {
+        font-size: 20px;
+    }
+
+    .desc {
+        padding: 0;
+        height: 700px;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .desc article {
+        font-size: 14px;
+        width: 95%;
+        border-top: 1.5px solid gray;
+        border-left: none;
+        padding: 10px;
+    }
+
+    .skills {
+        padding: 50px 5px 0 5px;
+        height: 1050px;
+    }
+
+    .skills h2 {
+        width: 90%;
+    }
+
+    .skills ul {
+        height: 200px;
+        margin: 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 470px;
+        padding: 50px 5px 0 5px;
+    }
+
+    .projects h2 {
+        width: 90%;
+        height: 30px;
+        margin: 0 0 50px 0;
+    }
+
+    .projects .card {
+        flex-direction: column;
+        width: 90%;
+        height: 300px;
+        font-size: 12.5px;
+    }
+
+    .projects .card h4 {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .env {
+        flex-direction: column;
+        padding: 30px 15px 0 15px;
+    }
+
+    .env div {
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .env a {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact {
+        height: 350px;
+        padding: 50px 15px 0 15px;
+    }
+
+    .contact div {
+        width: 90%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+    }
+
+    .contact a {
+        margin-bottom: 15px;
+    }
+
+    .card {
+        width: 90%;
+        height: 220px;
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .card h4 {
+        font-size: 20px;
+    }
+
+    .card img {
+        height: 90px;
+    }
 }
