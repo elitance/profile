@@ -290,32 +290,6 @@ nav select {
     margin-right: 15px;
 }
 
-.contact .fb {
-    color: #1877f2;
-    border: 1.5px solid #1877f2;
-}
-
-.contact .fb:hover {
-    background: #1877f2;
-}
-
-.contact .fb img {
-    filter: invert(33%) sepia(97%) saturate(2287%) hue-rotate(202deg) brightness(97%) contrast(96%);
-}
-
-.contact .gram {
-    color: #e4405f;
-    border: 1.5px solid #e4405f;
-}
-
-.contact .gram:hover {
-    background: #e4405f;
-}
-
-.contact .gram img {
-    filter: invert(31%) sepia(86%) saturate(1340%) hue-rotate(320deg) brightness(94%) contrast(91%);
-}
-
 .contact .twt {
     color: #1da1f2;
     border: 1.5px solid #1da1f2;
